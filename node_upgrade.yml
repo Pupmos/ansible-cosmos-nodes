@@ -1,0 +1,10 @@
+- name: Node (upgrade)
+  hosts: "{{ target }}"
+  become: true
+  roles:
+    - common
+    - node
+  vars:
+    binary_upgrade: 'true'
+  environment:
+    PATH: "{{ path }}"

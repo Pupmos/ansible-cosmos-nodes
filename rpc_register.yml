@@ -1,0 +1,7 @@
+- name: RPC (register)
+  hosts: "{{ target }}"
+  become: true
+  roles:
+    - rpc
+  vars:
+    node_type: rpc

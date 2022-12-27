@@ -1,0 +1,15 @@
+[submodule "group_vars"]
+	path = group_vars
+	url = https://github.com/Pupmos/ansible-cosmos-registry
+[submodule "roles/common"]
+	path = roles/common
+	url = https://github.com/Pupmos/ansible-cosmos-roles-common
+[submodule "roles/node"]
+	path = roles/node
+	url = https://github.com/Pupmos/ansible-cosmos-roles-node
+[submodule "roles/rpc"]
+	path = roles/rpc
+	url = https://github.com/Pupmos/ansible-cosmos-roles-rpc
+[submodule "roles/monitoring"]
+	path = roles/monitoring
+	url = https://github.com/Pupmos/ansible-roles-monitoring

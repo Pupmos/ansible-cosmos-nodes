@@ -1,0 +1,12 @@
+- name: RPC (setup)
+  hosts: "{{ target }}"
+  become: true
+  roles:
+    - common
+    - node
+    - rpc
+    - monitoring
+  vars:
+    node_type: rpc
+  environment:
+    PATH: "{{ path }}"

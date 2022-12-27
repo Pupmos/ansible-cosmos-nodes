@@ -1,0 +1,11 @@
+- name: Validator (setup)
+  hosts: "{{ target }}"
+  become: true
+  roles:
+    - common
+    - node
+    - monitoring
+  vars:
+    node_type: validator
+  environment:
+    PATH: "{{ path }}"

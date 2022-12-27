@@ -1,0 +1,8 @@
+- name: Node (basic setup)
+  hosts: "{{ target }}"
+  become: true
+  roles:
+    - common
+    - monitoring
+  environment:
+    PATH: "{{ path }}"
