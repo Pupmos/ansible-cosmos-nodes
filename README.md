@@ -1,6 +1,6 @@
 # Pupmos/ansible-cosmos-nodes
 
-Ansible playbook for Cosmos validators and RPC/gRPC/API nodes.
+An Ansible playbook for Cosmos validators and RPC/gRPC/API nodes.
 
 ## Prerequisites
 
