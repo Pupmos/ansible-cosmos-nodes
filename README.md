@@ -1,4 +1,4 @@
-# Ansible
+# Pupmos/ansible-cosmos-nodes
 
 Ansible playbooks for setting up new Cosmos validators and RPC/gRPC/API nodes.
 
@@ -35,9 +35,9 @@ cp inventory/hosts.example inventory/hosts
 
 4. Edit the file `inventory/hosts` as you see fit, by adding the IP addresses of your node/s to the corresponding chain IDs. 
 
-## Playbooks
+## Types
 
-The following playbooks are available:
+The following types are supported:
 
 - [RPC](RPC.md)
 - [Validator](VALIDATOR.md)
