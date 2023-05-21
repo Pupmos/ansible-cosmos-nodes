@@ -32,5 +32,5 @@ rpc-register:
 rpc-upgrade:
 	@ansible-playbook -i inventory/hosts -e 'target=$(CHAIN_ID) node_type=rpc restart_cosmovisor=$(RESTART_COSMOVISOR)' $(TARGET_OPTS) node_upgrade.yml
 
-node-basic:
-	@ansible-playbook -i inventory/hosts -e 'target=$(CHAIN_ID) password=$(PASSWORD) dd_api_key=$(DD_API_KEY) node_type=$(NODE_TYPE) provider=$(PROVIDER)' $(TARGET_OPTS) node_basic.yml
+app:
+	@ansible-playbook -i inventory/hosts -e 'target=app password=$(PASSWORD) dd_api_key=$(DD_API_KEY) provider=$(PROVIDER)' $(TARGET_OPTS) node_basic.yml
